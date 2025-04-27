@@ -1,6 +1,7 @@
 import unittest
 from math_operations import MathHelper
 
+
 class TestMathOperations(unittest.TestCase):
 
     def setUp(self) -> None:
@@ -10,7 +11,6 @@ class TestMathOperations(unittest.TestCase):
     def tearDown(self) -> None:
         del self.obj
         print("finished")
-
 
     def test_add(self):
         self.assertEqual(self.obj.add(1, 2), 3)
@@ -22,7 +22,7 @@ class TestMathOperations(unittest.TestCase):
     def test_divide(self):
         with self.assertRaises(ValueError):
             self.obj.divide(1, 0)
-        
+
         self.assertEqual(self.obj.divide(4, 2), 2.0)
         self.assertEqual(self.obj.divide(5, 2), 2.5)
 
@@ -36,5 +36,6 @@ class TestMathOperations(unittest.TestCase):
         self.assertIsNone(self.obj.get_max([]))
         self.assertEqual(self.obj.get_max([1, 2, 3]), 3)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
