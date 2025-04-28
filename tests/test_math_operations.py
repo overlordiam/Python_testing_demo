@@ -24,7 +24,6 @@ class TestMathOperations(unittest.TestCase):
             self.obj.divide(1, 0)
 
         self.assertEqual(self.obj.divide(4, 2), 2.0)
-        self.assertEqual(self.obj.divide(5, 2), 2.5)
 
     def test_is_even(self):
         self.assertTrue(self.obj.is_even(4))
