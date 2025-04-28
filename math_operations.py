@@ -8,7 +8,7 @@ class MathHelper:
             raise ValueError("Cannot divide by zero.")
         
 
-        return a // b
+        return a / b
 
     def is_even(self, num):
         return num % 2 == 0
