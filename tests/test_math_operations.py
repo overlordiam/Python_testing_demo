@@ -1,5 +1,5 @@
 import unittest
-from math_operations import MathHelper
+from app.math_operations import MathHelper
 
 
 class TestMathOperations(unittest.TestCase):
