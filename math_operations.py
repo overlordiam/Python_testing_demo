@@ -6,7 +6,6 @@ class MathHelper:
     def divide(self, a, b):
         if b == 0:
             raise ValueError("Cannot divide by zero.")
-        
 
         return a / b
 
@@ -14,5 +13,6 @@ class MathHelper:
         return num % 2 == 0
 
     def get_max(self, numbers):
-        if not numbers: return None
+        if not numbers:
+            return None
         return max(numbers)
