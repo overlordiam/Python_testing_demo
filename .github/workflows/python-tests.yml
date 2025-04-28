@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requirements.txt  # we install pytest even if using unittest for better reporting
+        pip install -r requirements.txt  # we install pytest even if using unittest for better reporting
 
     - name: Run unit tests
       run: |
